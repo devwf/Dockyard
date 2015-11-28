@@ -1,5 +1,5 @@
 #Using baked base
-FROM surajx/python-base
+FROM surajx/dockyard:python-base
 
 #Creating directory for django application source code
 RUN mkdir -p /usr/src/app
