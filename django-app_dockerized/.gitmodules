@@ -1,0 +1,2 @@
+[submodule "django-app_dockerized/django-app"]
+	branch = master
