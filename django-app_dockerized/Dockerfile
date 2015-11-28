@@ -14,13 +14,8 @@ RUN apt-get update && apt-get install -y \
     postgresql-client libpq-dev \
     --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
-#Adding verfication key
-RUN mkdir -p /root/.ssh && \
-    touch /root/.ssh/known_hosts && \
-    ssh-keyscan github.com >> /root/.ssh/known_hosts
-
 #Cloning latest django-app
-RUN git clone git@github.com:devwf/django-app.git /usr/src/app
+RUN git clone https://github.com/devwf/django-app.git /usr/src/app
 
 #Expose port 8880 of container
 EXPOSE 8880
