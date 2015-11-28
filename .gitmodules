@@ -1,0 +1,4 @@
+[submodule "django-app_dockerized/django-app"]
+	path = django-app_dockerized/django-app
+	url = git@github.com:devwf/django-app.git
+	branch = master
