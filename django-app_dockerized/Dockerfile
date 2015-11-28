@@ -9,7 +9,6 @@ WORKDIR /usr/src/app
 RUN apt-get update && apt-get install -y \
     gcc \
     git \
-    ssh \
     gettext \
     postgresql-client libpq-dev \
     --no-install-recommends && rm -rf /var/lib/apt/lists/*
