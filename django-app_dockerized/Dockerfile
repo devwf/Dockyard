@@ -22,5 +22,3 @@ EXPOSE 8880
 #Installing app requirements
 RUN pip install --no-cache-dir -r requirements.txt
 
-#Use TERM signal to Gracefully shutdown server
-STOPSIGNAL SIGTERM
