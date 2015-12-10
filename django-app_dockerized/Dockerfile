@@ -21,4 +21,3 @@ EXPOSE 8880
 
 #Installing app requirements
 RUN pip install --no-cache-dir -r requirements.txt
-
